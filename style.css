@@ -1,1 +1,82 @@
+@import url("https://fonts.cdnfonts.com/css/chirp-2");
 
+:root {
+  --black: #000;
+  --white: #fff;
+  --headings-white: #e7e9ea;
+  --blue: #1f9bf0;
+  --background-grey: #212327;
+  --light-grey: #71767a;
+  --grey: #181818;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  margin: 0;
+  font-family: "Chirp", sans-serif;
+  overflow-x: hidden;
+  display: flex;
+}
+
+/* Left Sidebar */
+
+.left-sidebar {
+  position: sticky;
+  width: 30vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  border-right: 0.1rem solid var(--background-grey);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.links-flex {
+  display: flex;
+  align-items: flex-start;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  width: 16rem;
+  flex-direction: column;
+}
+
+.white-logo {
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.white-logo:hover {
+  background-color: var(--background-grey);
+}
+
+.twitter-white-logo {
+  height: 2rem;
+  width: 2rem;
+}
+
+.link-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0rem 1rem;
+  padding-right: 2rem;
+}
+
+.link-flex:hover {
+  background-color: var(--background-grey);
+  border-radius: 2rem;
+}
+
+.link-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.link-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1rem 0rem;
+}
